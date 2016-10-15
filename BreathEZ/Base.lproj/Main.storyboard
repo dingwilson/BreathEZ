@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wFf-ej-y3V">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BreathEZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_Blue" translatesAutoresizingMaskIntoConstraints="NO" id="vaw-YX-EyE"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BreathEZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpt-7m-AyR">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="72"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKf-xn-qpV">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="1Wl-wo-rqM"/>
+                                </constraints>
+                                <state key="normal" title="Notify My Contact">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="notifyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="okn-Zv-0Is"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UG6-fI-w9H">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="YVn-W6-Ucv"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wxi-99-3xV"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSo-v3-8Se">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TransparentIcon" translatesAutoresizingMaskIntoConstraints="NO" id="e3v-42-Qhi"/>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="e3v-42-Qhi" firstAttribute="centerX" secondItem="QSo-v3-8Se" secondAttribute="centerX" id="5oU-9p-sSv"/>
+                                    <constraint firstItem="e3v-42-Qhi" firstAttribute="leading" secondItem="QSo-v3-8Se" secondAttribute="leading" constant="1" id="SDA-FE-jmv"/>
+                                    <constraint firstItem="e3v-42-Qhi" firstAttribute="top" secondItem="QSo-v3-8Se" secondAttribute="top" constant="1" id="Sr9-gt-8oN"/>
+                                    <constraint firstItem="e3v-42-Qhi" firstAttribute="centerY" secondItem="QSo-v3-8Se" secondAttribute="centerY" id="XRE-m1-BW4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QSo-v3-8Se" firstAttribute="top" secondItem="wpt-7m-AyR" secondAttribute="bottom" constant="51" id="0Fl-M6-HCK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UG6-fI-w9H" secondAttribute="bottom" constant="6" id="AVK-6a-eDT"/>
+                            <constraint firstItem="UG6-fI-w9H" firstAttribute="top" secondItem="QSo-v3-8Se" secondAttribute="bottom" constant="81" id="BaL-dr-N4n"/>
+                            <constraint firstItem="vaw-YX-EyE" firstAttribute="centerY" secondItem="QSo-v3-8Se" secondAttribute="centerY" id="NdF-yQ-9OO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pKf-xn-qpV" secondAttribute="bottom" constant="8" symbolic="YES" id="UaR-eV-yZA"/>
+                            <constraint firstItem="wpt-7m-AyR" firstAttribute="leading" secondItem="UG6-fI-w9H" secondAttribute="leading" id="bV3-5g-iUa"/>
+                            <constraint firstAttribute="trailing" secondItem="vaw-YX-EyE" secondAttribute="trailing" id="bbL-bs-Kg0"/>
+                            <constraint firstItem="QSo-v3-8Se" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="kRf-nT-fxK"/>
+                            <constraint firstItem="wpt-7m-AyR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kZD-Sq-IkJ"/>
+                            <constraint firstItem="pKf-xn-qpV" firstAttribute="leading" secondItem="UG6-fI-w9H" secondAttribute="trailing" constant="8" symbolic="YES" id="meX-Ug-YHC"/>
+                            <constraint firstItem="vaw-YX-EyE" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="n4e-79-CH1"/>
+                            <constraint firstItem="UG6-fI-w9H" firstAttribute="top" secondItem="pKf-xn-qpV" secondAttribute="top" id="nTc-Ab-QSp"/>
+                            <constraint firstItem="wpt-7m-AyR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="nfC-X1-sfp"/>
+                            <constraint firstItem="vaw-YX-EyE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nhJ-7o-cat"/>
+                            <constraint firstItem="vaw-YX-EyE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="p6s-Gh-utN"/>
+                            <constraint firstItem="wpt-7m-AyR" firstAttribute="centerX" secondItem="QSo-v3-8Se" secondAttribute="centerX" id="srg-9A-3Yh"/>
+                            <constraint firstItem="vaw-YX-EyE" firstAttribute="centerX" secondItem="QSo-v3-8Se" secondAttribute="centerX" id="tPp-YG-Vwf"/>
+                            <constraint firstItem="wpt-7m-AyR" firstAttribute="trailing" secondItem="pKf-xn-qpV" secondAttribute="trailing" id="zVI-AE-xxy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eDC-wt-qqe">
+                        <barButtonItem key="rightBarButtonItem" image="contact-book" id="am2-Hc-YJs">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="kNx-MY-QiU" kind="show" identifier="journalButtonPressed" id="M7g-Ov-ySC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backgroundImage" destination="vaw-YX-EyE" id="yMO-sS-JXs"/>
+                        <outlet property="breathImage" destination="QSo-v3-8Se" id="kSv-wF-y5L"/>
+                        <outlet property="cancelButton" destination="UG6-fI-w9H" id="E1E-vv-m4W"/>
+                        <outlet property="notifyButton" destination="pKf-xn-qpV" id="OgP-WE-lJu"/>
+                        <outlet property="titleLabel" destination="wpt-7m-AyR" id="MdS-xl-tEk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1300" y="-453.82308845577217"/>
+        </scene>
+        <!--Tracker-->
+        <scene sceneID="ACf-T4-XSe">
+            <objects>
+                <tableViewController id="kNx-MY-QiU" customClass="JournalTableViewController" customModule="BreathEZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" id="E77-Q5-2DV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="HzH-0y-VWG" detailTextLabel="xMC-eM-Yqc" rowHeight="61" style="IBUITableViewCellStyleSubtitle" id="kdg-K0-nVP">
+                                <rect key="frame" x="0.0" y="92" width="375" height="61"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kdg-K0-nVP" id="iEe-4t-pkj">
+                                    <frame key="frameInset" width="375" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HzH-0y-VWG">
+                                            <frame key="frameInset" minX="15" minY="12" width="34" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xMC-eM-Yqc">
+                                            <frame key="frameInset" minX="15" minY="33" width="33" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kNx-MY-QiU" id="MkF-OQ-Pi4"/>
+                            <outlet property="delegate" destination="kNx-MY-QiU" id="sht-9T-SlJ"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Tracker" image="contact-book" id="ucu-ro-ev8"/>
+                    <connections>
+                        <outlet property="journalTableView" destination="E77-Q5-2DV" id="cJQ-Zy-dzM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5vW-Vl-rlU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2280.8000000000002" y="-454.72263868065971"/>
+        </scene>
+        <!--BreathEZ-->
+        <scene sceneID="1sy-OZ-0S7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wFf-ej-y3V" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="BreathEZ" image="TransparentIcon48x48" id="GYj-fd-qIf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gW0-E4-sJK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6ea-C8-Ivk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yUe-E8-6eT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360.80000000000001" y="-453.82308845577217"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background_Blue" width="1280" height="720"/>
+        <image name="TransparentIcon" width="512" height="512"/>
+        <image name="TransparentIcon48x48" width="24" height="24"/>
+        <image name="contact-book" width="24" height="24"/>
+    </resources>
+</document>

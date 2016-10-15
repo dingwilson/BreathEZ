@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACABF932D5B41B9CD2B77F6D /* Pods_BreathEZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DA3B92AB514B80F2ACEF2B /* Pods_BreathEZ.framework */; };
+		C87507171DB2093700BB87A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87507161DB2093700BB87A8 /* AppDelegate.swift */; };
+		C87507191DB2093700BB87A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87507181DB2093700BB87A8 /* ViewController.swift */; };
+		C875071C1DB2093700BB87A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C875071A1DB2093700BB87A8 /* Main.storyboard */; };
+		C875071E1DB2093700BB87A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C875071D1DB2093700BB87A8 /* Assets.xcassets */; };
+		C87507211DB2093700BB87A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C875071F1DB2093700BB87A8 /* LaunchScreen.storyboard */; };
+		C88FB7991DB2AA9A001DC246 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88FB7981DB2AA9A001DC246 /* JournalTableViewController.swift */; };
+		C88FB79B1DB2AC58001DC246 /* BreatheData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88FB79A1DB2AC58001DC246 /* BreatheData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		72DA3B92AB514B80F2ACEF2B /* Pods_BreathEZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreathEZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		884DDF9722146566CAACEB01 /* Pods-BreathEZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathEZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BreathEZ/Pods-BreathEZ.debug.xcconfig"; sourceTree = "<group>"; };
+		C87507131DB2093700BB87A8 /* BreathEZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathEZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C87507161DB2093700BB87A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C87507181DB2093700BB87A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C875071B1DB2093700BB87A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C875071D1DB2093700BB87A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C87507201DB2093700BB87A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C87507221DB2093700BB87A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C88FB7981DB2AA9A001DC246 /* JournalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
+		C88FB79A1DB2AC58001DC246 /* BreatheData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreatheData.swift; sourceTree = "<group>"; };
+		E84416175146B68E219F9861 /* Pods-BreathEZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathEZ.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreathEZ/Pods-BreathEZ.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C87507101DB2093700BB87A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACABF932D5B41B9CD2B77F6D /* Pods_BreathEZ.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26494AE888C76451AA6B3822 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72DA3B92AB514B80F2ACEF2B /* Pods_BreathEZ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF569BED9B11641771D04904 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				884DDF9722146566CAACEB01 /* Pods-BreathEZ.debug.xcconfig */,
+				E84416175146B68E219F9861 /* Pods-BreathEZ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C875070A1DB2093700BB87A8 = {
+			isa = PBXGroup;
+			children = (
+				C87507151DB2093700BB87A8 /* BreathEZ */,
+				C87507141DB2093700BB87A8 /* Products */,
+				AF569BED9B11641771D04904 /* Pods */,
+				26494AE888C76451AA6B3822 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C87507141DB2093700BB87A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C87507131DB2093700BB87A8 /* BreathEZ.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C87507151DB2093700BB87A8 /* BreathEZ */ = {
+			isa = PBXGroup;
+			children = (
+				C87507161DB2093700BB87A8 /* AppDelegate.swift */,
+				C88FB79A1DB2AC58001DC246 /* BreatheData.swift */,
+				C87507181DB2093700BB87A8 /* ViewController.swift */,
+				C88FB7981DB2AA9A001DC246 /* JournalTableViewController.swift */,
+				C875071A1DB2093700BB87A8 /* Main.storyboard */,
+				C875071D1DB2093700BB87A8 /* Assets.xcassets */,
+				C875071F1DB2093700BB87A8 /* LaunchScreen.storyboard */,
+				C87507221DB2093700BB87A8 /* Info.plist */,
+			);
+			path = BreathEZ;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C87507121DB2093700BB87A8 /* BreathEZ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C87507251DB2093700BB87A8 /* Build configuration list for PBXNativeTarget "BreathEZ" */;
+			buildPhases = (
+				EDDFB2A95DF95C92ECC046DD /* [CP] Check Pods Manifest.lock */,
+				C875070F1DB2093700BB87A8 /* Sources */,
+				C87507101DB2093700BB87A8 /* Frameworks */,
+				C87507111DB2093700BB87A8 /* Resources */,
+				B966F451C9573B78F9685823 /* [CP] Embed Pods Frameworks */,
+				C5EF60CB083CDD8F5CA2E1E2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BreathEZ;
+			productName = BreathEZ;
+			productReference = C87507131DB2093700BB87A8 /* BreathEZ.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C875070B1DB2093700BB87A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Wilson Ding";
+				TargetAttributes = {
+					C87507121DB2093700BB87A8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 585SNYAD83;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C875070E1DB2093700BB87A8 /* Build configuration list for PBXProject "BreathEZ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C875070A1DB2093700BB87A8;
+			productRefGroup = C87507141DB2093700BB87A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C87507121DB2093700BB87A8 /* BreathEZ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C87507111DB2093700BB87A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C87507211DB2093700BB87A8 /* LaunchScreen.storyboard in Resources */,
+				C875071E1DB2093700BB87A8 /* Assets.xcassets in Resources */,
+				C875071C1DB2093700BB87A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B966F451C9573B78F9685823 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BreathEZ/Pods-BreathEZ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5EF60CB083CDD8F5CA2E1E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BreathEZ/Pods-BreathEZ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDDFB2A95DF95C92ECC046DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C875070F1DB2093700BB87A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C87507191DB2093700BB87A8 /* ViewController.swift in Sources */,
+				C88FB79B1DB2AC58001DC246 /* BreatheData.swift in Sources */,
+				C88FB7991DB2AA9A001DC246 /* JournalTableViewController.swift in Sources */,
+				C87507171DB2093700BB87A8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C875071A1DB2093700BB87A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C875071B1DB2093700BB87A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C875071F1DB2093700BB87A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C87507201DB2093700BB87A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C87507231DB2093700BB87A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C87507241DB2093700BB87A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C87507261DB2093700BB87A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 884DDF9722146566CAACEB01 /* Pods-BreathEZ.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 585SNYAD83;
+				INFOPLIST_FILE = BreathEZ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wilsonding.BreathEZ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C87507271DB2093700BB87A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E84416175146B68E219F9861 /* Pods-BreathEZ.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 585SNYAD83;
+				INFOPLIST_FILE = BreathEZ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wilsonding.BreathEZ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C875070E1DB2093700BB87A8 /* Build configuration list for PBXProject "BreathEZ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C87507231DB2093700BB87A8 /* Debug */,
+				C87507241DB2093700BB87A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C87507251DB2093700BB87A8 /* Build configuration list for PBXNativeTarget "BreathEZ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C87507261DB2093700BB87A8 /* Debug */,
+				C87507271DB2093700BB87A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C875070B1DB2093700BB87A8 /* Project object */;
+}
