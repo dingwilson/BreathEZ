@@ -16,6 +16,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var notifyButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var instructionLabel: UILabel!
     
     var circleLayer = CALayer()
     
@@ -76,6 +77,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
         self.intervalData = nil
         self.timeAtPress = nil
         self.checkTimer = nil
+        self.instructionLabel.isHidden = false
     }
 
     // MARK: - Navigation
@@ -173,6 +175,7 @@ extension ViewController {
         //print(Date().timeIntervalSince(timeAtPress))
         
         if dataCollected == 1 {
+            self.instructionLabel.isHidden = true
             self.backgroundImage.image = UIImage(named: "Background_Red")
             self.navigationItem.title = "Detected abnormal breathing..."
             intervalData = Date().timeIntervalSince(timeAtPress)
@@ -184,7 +187,7 @@ extension ViewController {
         } else if dataCollected == 5 {
             self.navigationItem.title = "Data Recorded..."
             intervalData = (intervalData + Date().timeIntervalSince(timeAtPress))/2
-            self.journalData.append(BreatheData(date: Date(), interval: intervalData))
+            self.journalData.insert(BreatheData(date: Date(), interval: intervalData), at: 0)
             animate(time: intervalData)
         } else {
             self.backgroundImage.image = UIImage(named: "Background_Blue")

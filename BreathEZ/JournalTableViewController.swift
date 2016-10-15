@@ -20,6 +20,8 @@ class JournalTableViewController: UITableViewController {
         navigationController?.navigationBar.barTintColor = colorWithHexString(hex: "011A46")
         
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        
+        navigationController?.navigationBar.tintColor = UIColor.white
     }
 
     override func didReceiveMemoryWarning() {
